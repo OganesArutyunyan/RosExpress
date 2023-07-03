@@ -1,0 +1,373 @@
+
+//Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+//font-family: 'PT Sans', sans-serif;
+
+@import url('https://fonts.cdnfonts.com/css/post-no-bills-jaffna');
+//font-family: 'Post No Bills Jaffna SemiBold', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+//font-family: 'Playfair Display', serif;
+
+
+//Шрифты по умолчанию====================
+$fontfamily:'Lato';
+//=======================================
+
+//=== Variables ===
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+$screen-xs-max: 575px;
+$screen-sm-max: 767px;
+$screen-md-max: 991px;
+$screen-lg-max: 1199px;
+//=== Variables ===
+
+
+//Блок регистрации 
+.data {
+    background-color: black;
+    height: 44px;
+}
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+}
+.schedule {
+    display: flex;
+}
+.phone-img {
+    padding-right: 16.1px;
+}
+.number {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.53px;
+    color: #969696;
+    padding-right: 10px;
+    border-right: 1px solid #969696;
+}
+
+.days {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.53px;
+    color: #969696;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #969696;
+}
+.time {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.53px;
+    color: #969696;
+    padding-left: 10px;
+}
+.registration {
+    display: flex;
+}
+.reg-img {
+    padding-right: 12px;
+    background-color: transparent;
+}
+.reg-text {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.53px;
+    color: #969696;
+    background-color: transparent;
+}
+.reg-text:hover {
+    text-decoration: underline;
+}
+
+//Блок меню
+.menu {
+    height: 80px;
+    background: #0F0F0F;
+    ;
+}
+.menu-row {
+    display: flex;
+    justify-content: space-between;
+}
+.main-icon {
+    margin-top: 25px;
+}
+.right-side {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+}
+.list {
+    padding: 31px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 18.12px;
+}
+.list a {
+    color: white;
+    display: inline-block;
+
+    &:hover {
+        color: gray;
+    }
+}
+.icon-cart {
+    margin-top: 27px;
+    padding: 0 40px 0 20px;
+    background-color: transparent;
+    & a {        
+        cursor: pointer;
+    }
+}
+.icon-search {
+    margin-top: 27px;
+    background-color: transparent;
+    & a {        
+        cursor: pointer;
+    }
+}
+
+//Блок главный
+.main {
+    background: url('../../img/Блок главный/01.svg') center / cover no-repeat;
+    max-height: 810px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.info {
+    width: 320px;
+    height: 320px;
+    border: 4px solid white;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 160px;
+}
+.info-icon {
+    font-family: 'Post No Bills Jaffna SemiBold', sans-serif;
+    font-size: 64px;
+    color: white;
+    margin-top: 93px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+.info-city {
+    font-size: 22px;
+    line-height: 28.47px;
+    color: white;
+    margin: 7px 0 94px 0;
+    font-family: 'PT Sans', sans-serif;
+}
+.text {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 auto;
+    max-width: 730px;
+    max-height: 96px;
+    padding: 80px 0 154px 0;
+    text-align: center;
+}
+
+//Блок коллекций
+//Первая коллекция
+.first-block {
+}
+.first-block-row {
+    display: flex;
+}
+.first-block-season {
+    background-color: black;
+    max-width: 1040px;
+}
+.season-title {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    line-height: 42.19px;
+    text-align: center;
+    margin: 93px 0 50px 0;
+}
+.season-line {
+    color: white;
+    height: 2px;
+    width: 120px;
+    text-align: center;
+}
+.season-items {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+.item {
+    height: 400px;
+    max-width: 260px;    
+    margin-right: 50px;
+    margin-bottom: 93px;
+}
+.item-background {
+    background-color: #191B1C;
+    width: 260px;
+    height: 326px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.item-image {
+}
+.item-text {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    line-height: 21.09px;
+    margin: 25px 0 10px 0;
+}
+.item-price {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    line-height: 18.75px;
+}
+.first-block-collection {
+    background: url('../../img/Блок коллекий/02.svg') center / cover no-repeat;
+    width: 880px;
+    height: 730px;
+}
+.collection-row  {
+    display: flex;
+    flex-direction: column;
+}
+.collection-title {
+    color: white;
+    font-size: 36px;
+    line-height: 42.19px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 484px 0 30px 0;
+}
+.collection-line {
+}
+.collection-button {
+    display: inline-block;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    padding: 12px 28px;
+    background: none;
+    border: 1px solid white;
+    text-transform: uppercase;
+    margin: 30px 0 0 0;
+    align-self: center;
+    transition: all ease 0.8s;
+    
+    &:hover {
+        background: white;
+        color: black;
+        transition: all ease 0.8s;
+    } 
+    
+}
+
+//Вторая коллекция
+.second-block {
+}
+.second-block-row {
+    display: flex;
+}
+.second-block-image {
+    background: url('../../img/Блок коллекий/03.svg') center / cover no-repeat;
+    width: 880px;
+    height: 600px;
+}
+.second-block-info {
+    background-color: black;
+    width: 1040px;
+}
+.second-block-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.second-block-title {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    line-height: 42.19px;
+    text-transform: uppercase;
+    margin: 0px 0 40px 0;
+}
+.second-block-line {
+    width: 120px;
+    height: 1px;
+    color: white;
+    margin-bottom: 40px;
+}
+.second-block-text {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 21px;
+    max-width: 471px;
+    margin-bottom: 61px;
+}
+.second-block-button {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    line-height: 23.29px;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    letter-spacing: 0.1em;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    transition: all ease 0.8s;
+    align-self: center;
+
+    &:hover {
+        background: white;
+        color: black;
+        transition: all ease 0.8s;
+    }
+}
+
+
+//=====================================================
+
+
+
+
+
