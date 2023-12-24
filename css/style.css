@@ -1,95 +1,33 @@
-@charset "UTF-8";
+@import url("/css/nullstyle.css");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/post-no-bills-jaffna");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
 
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-:focus, :active {
-  outline: none;
-}
-
-a:focus, a:active {
-  outline: none;
-}
-
-nav, footer, header, aside {
-  display: block;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input, button, textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a, a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: 400;
+:root {
+  --grey-color: rgb(150, 150, 150);
+  --light-grey-color: rgba(208, 208, 208, 1);
+  --light-black-color: rgba(15, 15, 15, 1);
+  --white-color: rgb(255, 255, 255, 1);
+  --black-color: rgb(0, 0, 0, 1);
 }
 
 .data {
-  background-color: black;
-  height: 44px;
+  background-color: var(--black-color);
+  max-width: 100%;
+  min-height: 44px;
 }
 
-.container {
+.data-container {
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .data-row {
+  min-height: 44px;
   display: flex;
   justify-content: space-between;
-  padding-top: 14px;
+  align-items: center;
 }
 
 .schedule {
@@ -100,34 +38,23 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 16.1px;
 }
 
+.data-info {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15.53px;
+  color: var(--grey-color);  
+}
 .number {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15.53px;
-  color: #969696;
-  padding-right: 10px;
-  border-right: 1px solid #969696;
+  padding: 0 10px 0 0;
+  border-right: 1px solid var(--grey-color);
 }
-
 .days {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15.53px;
-  color: #969696;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-right: 1px solid #969696;
+  padding: 0 10px;
+  border-right: 1px solid var(--grey-color);
 }
-
 .time {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15.53px;
-  color: #969696;
-  padding-left: 10px;
+  padding: 0 0 0 10px;
 }
 
 .registration {
@@ -140,87 +67,95 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reg-text {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15.53px;
-  color: #969696;
   background-color: transparent;
 }
 
 .reg-text:hover {
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-.menu {
+/*MENU BURGER*/
+.navbar {
+  position: sticky;
+  top: 0px;
+  width: 100%;
   height: 80px;
-  background: #0F0F0F;
+  background: var(--light-black-color);
 }
 
-.menu-row {
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 15px;
+}
+
+.navbar__wrap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
-.main-icon {
-  margin-top: 25px;
+.hamb {
+  display: none;
 }
 
-.right-side {
-  display: flex;
-  justify-content: space-between;
+.popup {
+  display: none;
 }
 
-.menu-list {
-  display: flex;
-  justify-content: space-between;
+.logo {
+  width: 104px;
+  height: 49px;
+  background-image: url('/img/Блок меню/01.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-.list {
-  padding: 31px 20px;
-  font-size: 14px;
+.menu > li > a {
   text-decoration: none;
-  font-family: "PT Sans", sans-serif;
-  line-height: 18.12px;
+  text-transform: uppercase;
 }
 
-.list a {
-  color: white;
-  display: inline-block;
-}
-.list a:hover {
-  color: gray;
+.navbar__wrap .menu {
+  display: flex;
 }
 
-.icon-cart {
-  margin-top: 27px;
-  padding: 0 40px 0 20px;
-  background-color: transparent;
-}
-.icon-cart a {
-  cursor: pointer;
+.navbar__wrap .menu > li {
+  display: flex;
+  align-items: stretch;
 }
 
-.icon-search {
-  margin-top: 27px;
-  background-color: transparent;
-}
-.icon-search a {
-  cursor: pointer;
+.navbar__wrap .menu > li > a {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.main {
-  background: url("../../img/Блок главный/01.svg") center/cover no-repeat;
+.navbar__wrap .menu > li > a:hover {
+  color: var(--white-color);
+}
+
+
+/*MAIN*/
+.main {  
   max-height: 810px;
+  background: url("../../img/Блок главный/01.svg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   padding: 0 20px;
 }
 
 .info {
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   height: 320px;
-  border: 4px solid white;
+  border: 4px solid var(--white-color);
   margin: 0 auto;
   text-align: center;
   margin-top: 160px;
@@ -229,203 +164,644 @@ h1, h2, h3, h4, h5, h6 {
 .info-icon {
   font-family: "Post No Bills Jaffna SemiBold", sans-serif;
   font-size: 64px;
-  color: white;
+  color: var(--white-color);
   margin-top: 93px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--white-color);
   display: inline-block;
 }
 
 .info-city {
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 28.47px;
-  color: white;
+  color: var(--white-color);
   margin: 7px 0 94px 0;
-  font-family: "PT Sans", sans-serif;
 }
 
 .text {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
-  color: white;
+  color: var(--white-color);
   margin: 0 auto;
   max-width: 730px;
-  max-height: 96px;
+  min-height: 96px;
   padding: 80px 0 154px 0;
   text-align: center;
 }
 
+
+/* Блок коллекий FIRST BLOCK */
+.first-block {
+  max-width: 1920px;
+  min-height: 730px;
+}
 .first-block-row {
   display: flex;
 }
-
-.first-block-season {
-  background-color: black;
-  max-width: 1040px;
-}
-
-.season-title {
-  color: white;
-  font-family: "Playfair Display", serif;
-  font-size: 36px;
-  line-height: 42.19px;
-  text-align: center;
-  margin: 93px 0 50px 0;
-}
-
-.season-line {
-  color: white;
-  height: 2px;
-  width: 120px;
-  text-align: center;
-}
-
-.season-items {
-  display: flex;
-  margin: 0 auto;
-  padding: 0 80px;
-}
-
-.item {
-  height: 400px;
-  max-width: 260px;
-  margin-right: 50px;
-  margin-bottom: 93px;
-}
-
-.item-background {
-  background-color: #191B1C;
-  width: 260px;
-  height: 326px;
+.new-season-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-}
-
-.item-text {
-  color: white;
-  font-family: "Playfair Display", serif;
-  font-size: 24px;
-  line-height: 21.09px;
-  margin: 25px 0 10px 0;
-}
-
-.item-price {
-  color: white;
-  font-family: "Playfair Display", serif;
-  font-size: 21px;
-  line-height: 18.75px;
-}
-
-.first-block-collection {
-  background: url("../../img/Блок коллекий/02.svg") center/cover no-repeat;
-  width: 880px;
-  height: 730px;
-}
-
-.collection-row {
-  display: flex;
-  flex-direction: column;
-}
-
-.collection-title {
-  color: white;
-  font-size: 36px;
-  line-height: 42.19px;
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 484px 0 30px 0;
-}
-
-.collection-button {
-  display: inline-block;
-  color: white;
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  padding: 12px 28px;
-  background: none;
-  border: 1px solid white;
-  text-transform: uppercase;
-  margin: 30px 0 0 0;
-  align-self: center;
-  transition: all ease 0.8s;
-}
-.collection-button:hover {
-  background: white;
-  color: black;
-  transition: all ease 0.8s;
-}
-
-.second-block-row {
-  display: flex;
-}
-
-.second-block-image {
-  background: url("../../img/Блок коллекий/03.svg") center/cover no-repeat;
-  width: 880px;
-  height: 600px;
-}
-
-.second-block-info {
-  background-color: black;
-  width: 1040px;
-}
-
-.second-block-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
   align-items: center;
-  margin-top: 100px;
 }
-
-.second-block-title {
-  color: white;
-  font-family: "Playfair Display", serif;
+.new-season {
+  width: 100%;
+  max-width: 1040px;
+  height: 730px;
+  background-color: var(--black-color);
+  text-align: center;
+}
+.new-season-content {
+  padding: 93px 80px;
+}
+.new-season-title {
+  width: 376px;
+  font-family: 'Playfair Display';
   font-size: 36px;
+  font-weight: 600;
   line-height: 42.19px;
   text-transform: uppercase;
-  margin: 0px 0 40px 0;
+  color: var(--white-color);
+  margin: 0 0 50px 0;
 }
-
-.second-block-line {
+.new-season-line {
   width: 120px;
-  height: 1px;
-  color: white;
-  margin-bottom: 40px;
+  border: 1px solid var(--white-color);
+  margin: 0 0 50px 0;
+}
+.new-season-row {
+  display: flex;
+  gap: 50px;
+}
+.new-season-item {
+  cursor: pointer;
+}
+.item-bg {
+  width: 260px;
+  height: 325px;
+  background-color: rgba(25, 27, 28, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 25px 0;
+  transition: 0.6s ease;
+}
+.item-bg:hover {
+  transform: translateY(-10px);
+  transition: 0.6s ease;
+}
+.item-title {
+  font-family: 'Playfair Display';
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 21.09px;
+  color: var(--white-color);
+  text-align: start;
+  margin: 0 0 10px 0;  
+  transition: 0.5s ease;
+}
+.item-title:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: 0.5s ease;
+}
+.item-price {
+  font-family: 'Playfair Display';
+  font-size: 16px;
+  line-height: 18.75px;
+  color: var(--light-grey-color);
+  text-align: start;
+}
+.new-collection {
+  width: 100%;
+  max-width: 880px;
+  height: 730px;
+  background: url('/img/Блок коллекий/02.svg');
+  background-repeat: no-repeat;
+  background-size: cover;  
+  display: flex;
+  justify-content: center;
 }
 
-.second-block-text {
-  color: white;
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
+.new-collection-content {
+  width: 100%;
+  max-width: 376px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  line-height: 21px;
-  max-width: 471px;
-  margin-bottom: 61px;
+  padding: 484px 252px 100px 252px;
 }
-
-.second-block-button {
-  font-family: "PT Sans", sans-serif;
+.new-collection-title {
+  max-width: 376px;
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42.19px;
+  color: var(--white-color);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+}
+.new-collection-line {
+  width: 120px;
+  border: 1px solid var(--white-color);
+  margin: 0 0 30px 0;
+}
+.button {
   font-size: 18px;
   line-height: 23.29px;
   text-transform: uppercase;
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
   padding: 12px 28px;
-  letter-spacing: 0.1em;
-  background: none;
-  color: white;
-  border: 1px solid white;
-  transition: all ease 0.8s;
-  align-self: center;
+  background: transparent;
+  transition: 0.4s ease;
 }
-.second-block-button:hover {
-  background: white;
-  color: black;
-  transition: all ease 0.8s;
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 0.4s ease;
 }
+/*SECOND BLOCK*/
+.second-block {
+  max-width: 1920px;
+  min-height: 600px;
+}
+.second-block-row {
+  display: flex;
+}
+.second-block-collection {
+  width: 100%;
+  max-width: 880px;
+  height: 600px;
+  background: url("/img/Блок коллекий/03.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+.second-block-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.second-block-info {
+  width: 100%;
+  max-width: 1040px;
+  height: 600px;
+  background-color: var(--black-color);
+}
+.second-block-content {
+  height: auto;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.second-block-title {
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  line-height: 42.19px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin: 0 0 40px 0;
+}
+.second-block-line {
+  width: 120px;
+  border: 1px solid var(--white-color);
+  margin: 0 0 40px 0;
+}
+.second-block-text {
+  max-width: 471px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--white-color);
+  text-align: center;
+  padding: 0 20px;
+  margin: 0 0 61px 0;
+}
+
+
+/*NEW GOODS*/
+.new-goods {
+  max-width: 1920px;
+  min-height: 1289px;
+  background-color: var(--black-color);
+}
+.new-goods-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0 0 0;
+}
+.new-goods-title {
+  max-width: 440px;
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42.19px;
+  color: var(--white-color);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+}
+.new-goods-line {
+  width: 120px;
+  border: 1px solid var(--white-color);
+  margin: 0 0 81px 0;
+}
+.new-goods-row {
+  max-width: 1149px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 23px;
+  padding: 0 20px 20px 20px;
+}
+.new-goods-item {
+  cursor: pointer;
+}
+
+
+/*OUR BRANDS*/
+.our-brands {
+  width: 100%;
+  background-color: var(--light-black-color);
+}
+.our-brands-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px 74px 20px;
+}
+.our-brands-title {
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  line-height: 42.19px;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+  text-transform: uppercase;
+  color: var(--white-color);
+  text-align: center;
+}
+.our-brands-line {
+  width: 120px;
+  border: 1px solid var(--white-color);
+  margin: 0 0 40px 0;
+}
+.our-brands-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.our-brands-icon {
+  width: 255px;
+  min-height: 94px;
+  background-image: url('/img/Блок бренды/01.svg');
+}
+
+/*FOOTER*/
+.footer {
+  max-width: 1920px;
+  min-height: 400px;
+  background-image: url("/img/Блок footer/01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-content {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  padding: 20px;
+}
+.footer-about {
+  margin: 0 31px 0 0;
+}
+.footer-title {
+  font-family: 'Playfair Display';
+  font-size: 24px;
+  line-height: 28.13px;
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin: 0 0 40px;
+}
+.footer-text {
+  max-width: 350px;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--white-color);
+  text-align: justify;
+  margin: 0 0 37px 0;
+}
+.footer-category {
+  margin: 0 72px 0 0;
+}
+.footer-subcategory {
+  max-width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+
+}
+.footer-subcategory-item {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", sans-serif;
+  color: var(--light-grey-color);
+  background-color: var(--light-black-color);
+  transition: 0.4s ease;
+}
+.footer-subcategory-item:hover {
+  background-color: rgba(28,28,28, 1);
+  transition: 0.4s ease;
+}
+.footer-input {
+  max-width: 210px;
+  height: 42px;
+  color: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0 0 0 10px;  
+  transition: 0.5s ease;  
+}
+.footer-input:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.5s ease;
+}
+input::-webkit-input-placeholder { color: var(--light-grey-color);; }
+input::-moz-placeholder { color: var(--light-grey-color);; }
+
+.footer-button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--light-grey-color);
+  background-color: var(--light-black-color);
+  padding: 10px 20px;
+  transition: 0.4s ease;
+}
+.footer-button:hover {
+  background-color: rgba(28,28,28, 1);
+  transition: 0.4s ease;
+}
+
+/*COPYRIGHT*/
+.copyright {
+  max-width: 100%;
+  min-height: 50px;
+  background-color: var(--light-black-color);
+  position: relative;
+}
+.copyright-row {
+  max-width: 1110px;
+  min-height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center; 
+}
+.copyright-text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  line-height: 15.53px;
+  color: var(--light-grey-color);
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1919px) {
+  .new-season {
+    height: auto;
+  }
+  .new-season-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .new-collection {
+    height: auto;
+  }
+}
+@media (max-width: 1460px) {
+  .first-block-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .new-season{
+    max-width: 100%;
+  }
+  .new-collection {
+    width: 100%;
+    max-width: 100%;
+  } 
+}
+@media (max-width: 1200px) {
+  .first-block-row {
+    display: flex;
+    flex-wrap: wrap;  
+  }
+  .new-season{
+    max-width: 100%;
+  }
+  .new-collection {
+    width: 100%;
+    max-width: 100%;
+  }
+  .copyright-row {
+    padding: 0 20px;
+  }
+  
+}
+
+@media (max-width: 960px) {
+  .first-block-row {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .new-collection {
+    max-width: 100%;
+    height: 100%;
+    background: url('/img/Блок коллекий/02.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
+  .second-block-row {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+  }
+  .second-block-collection{
+    max-width: 100%;
+    height: 600px;
+    order: 2;
+  }
+  .second-block-info {
+    max-width: 100%;
+    height: auto;
+    order: 1;
+  }
+  .second-block-content {
+    padding: 20px 0 20px 0;
+  }
+
+  .new-goods-row {
+    padding: 0 20px 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar__wrap .menu {
+    display: none;
+  }
+
+  .hamb {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamb__field {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--white-color);
+    transition: 0.2s;
+  }
+
+  .popup {
+    position: fixed;
+    top: 124px; 
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-color);
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+  }
+  
+  .navbar_scrolled {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    background: var(--light-black-color);
+  }
+
+  .popup_scrolled {
+    position: fixed;
+    top: 80px; 
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-color);
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+  }
+  .popup.open {
+    left: 0;
+  }
+
+  .popup .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px 0;
+    overflow: auto;
+  }
+
+  .popup .menu > li {
+    width: 100%;
+  }
+
+  .popup .menu > li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--white-color);
+  }
+
+  .popup .menu > li > a:hover {
+    background-color: rgba(122, 82, 179, 0.1);
+  }
+
+  .hamb__field.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamb__field.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamb__field.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  body.noscroll {
+    overflow: hidden;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .new-season-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 20px;
+  }
+  .footer-title {
+    padding: 20px 0 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .second-block-collection {
+    max-height: 450px;
+  }
+  
+  .new-goods-content {
+    padding: 50px 0 0 0;
+  }
+  .copyright-row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+

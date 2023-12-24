@@ -1,1 +1,1 @@
-Men's suits landing page
+Men's suits responsive landing page
