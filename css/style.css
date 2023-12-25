@@ -1,4 +1,4 @@
-@import url("/css/nullstyle.css");
+@import url("../css/nullstyle.css");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/post-no-bills-jaffna");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
@@ -110,7 +110,7 @@
 .logo {
   width: 104px;
   height: 49px;
-  background-image: url('../img/Блок меню/01.svg');
+  background: url('../img/Блок меню/01.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -477,7 +477,7 @@
 .footer {
   max-width: 1920px;
   min-height: 400px;
-  background-image: url("../img/Блок footer/01.png");
+  background: url("../img/Блок footer/01.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
