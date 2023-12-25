@@ -110,7 +110,7 @@
 .logo {
   width: 104px;
   height: 49px;
-  background-image: url('/img/Блок меню/01.svg');
+  background-image: url('../img/Блок меню/01.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -251,6 +251,14 @@
 .item-bg:hover {
   transform: translateY(-10px);
   transition: 0.6s ease;
+}
+.item-img {
+  width: 260px;
+  height: 260px;
+  background: url('../img/Блок коллекий/01.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
 }
 .item-title {
   font-family: 'Playfair Display';
