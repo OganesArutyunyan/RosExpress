@@ -217,7 +217,7 @@
   padding: 93px 80px;
 }
 .new-season-title {
-  width: 376px;
+  max-width: 376px;
   font-family: 'Playfair Display';
   font-size: 36px;
   font-weight: 600;
@@ -665,14 +665,13 @@ input::-moz-placeholder { color: var(--light-grey-color);; }
     order: 1;
   }
   .second-block-content {
-    padding: 20px 0 20px 0;
+    padding: 30px 10px;
   }
 
   .new-goods-row {
     padding: 0 20px 40px;
   }
 }
-
 @media (max-width: 800px) {
   .navbar__wrap .menu {
     display: none;
@@ -778,14 +777,20 @@ input::-moz-placeholder { color: var(--light-grey-color);; }
   }
 }
 
-
 @media (max-width: 640px) {
   .new-season-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+  .new-collection-content {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  } 
   .footer-content {
     max-width: 100%;
     display: flex;
@@ -798,12 +803,35 @@ input::-moz-placeholder { color: var(--light-grey-color);; }
 }
 
 @media (max-width: 480px) {
+  
+  .new-season-content {
+    padding: 20px;
+  }
+  .new-season-title {
+    font-size: 30px;
+  }
+  .new-collection-content {
+    min-height: 350px;
+    padding: 0 20px;
+  }
+  .new-collection-title {
+    font-size: 30px;
+  }
+  .second-block-title {
+    font-size: 30px;
+  }
   .second-block-collection {
     max-height: 450px;
   }
   
   .new-goods-content {
     padding: 50px 0 0 0;
+  }
+  .new-goods-title {
+    font-size: 30px;
+  }
+  .our-brands-title {
+    font-size: 30px;
   }
   .copyright-row {
     display: flex;
