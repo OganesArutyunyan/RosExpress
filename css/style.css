@@ -145,7 +145,7 @@
 /*MAIN*/
 .main {  
   max-height: 810px;
-  background: url("../img/Блок главный/01.svg") center/cover no-repeat;
+  background: url("../img/Блок главный/01.webp") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   padding: 0 20px;
@@ -286,7 +286,7 @@
   width: 100%;
   max-width: 880px;
   height: 730px;
-  background: url('../img/Блок коллекий/02.svg');
+  background: url('../img/Блок коллекий/02.webp');
   background-repeat: no-repeat;
   background-size: cover;  
   display: flex;
@@ -345,7 +345,7 @@
   width: 100%;
   max-width: 880px;
   height: 600px;
-  background: url("../img/Блок коллекий/03.svg");
+  background: url("../img/Блок коллекий/03.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
