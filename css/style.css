@@ -1,7 +1,56 @@
 @import url("../css/nullstyle.css");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
-@import url("https://fonts.cdnfonts.com/css/post-no-bills-jaffna");
+/*@import url("https://fonts.cdnfonts.com/css/post-no-bills-jaffna");*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+@font-face{
+  font-family:post no bills jaffna;
+  font-style:normal;
+  font-weight:400;
+  src:local('Post No Bills Jaffna'),
+      url(https://fonts.cdnfonts.com/s/15515/PostNoBillsJaffna-Regular.woff) format('woff');
+  font-display: swap;
+}
+@font-face{
+  font-family:post no bills jaffna;
+  font-style:normal;
+  font-weight:700;
+  src:local('Post No Bills Jaffna'),
+      url(https://fonts.cdnfonts.com/s/15515/PostNoBillsJaffna-Bold.woff) format('woff');
+  font-display: swap;
+}
+@font-face{
+  font-family:post no bills jaffna light;
+  font-style:normal;
+  font-weight:300;
+  src:local('Post No Bills Jaffna Light'),
+      url(https://fonts.cdnfonts.com/s/15515/PostNoBillsJaffna-Light.woff) format('woff');
+  font-display: swap;
+}
+@font-face{
+  font-family:post no bills jaffna medium;
+  font-style:normal;
+  font-weight:500;
+  src:local('Post No Bills Jaffna Medium'),
+      url(https://fonts.cdnfonts.com/s/15515/PostNoBillsJaffna-Medium.woff) format('woff');
+  font-display: swap;
+}
+@font-face{
+  font-family:post no bills jaffna semibold;
+  font-style:normal;font-weight:600;
+  src:local('Post No Bills Jaffna SemiBold'),
+      url(https://fonts.cdnfonts.com/s/15515/PostNoBillsJaffna-SemiBold.woff) format('woff');
+  font-display: swap;
+}
+@font-face{
+  font-family:post no bills jaffna extrabold;
+  font-style:normal;
+  font-weight:800;
+  src:local('Post No Bills Jaffna ExtraBold'),
+      url(https://fonts.cdnfonts.com/s/15515/PostNoBillsJaffna-ExtraBold.woff) format('woff');
+  font-display: swap;
+}
+
 
 :root {
   --grey-color: rgb(150, 150, 150);
