@@ -3,126 +3,10 @@
 /*@import url("https://fonts.cdnfonts.com/css/post-no-bills-jaffna");*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
 
-@font-face{
-  font-family:post no bills jaffna;
-  font-style:normal;
-  font-weight:400;
-  src:local('Post No Bills Jaffna'),
-      url(https://fonts.cdnfonts.com/s/15515/PostNoBillsJaffna-Regular.woff) format('woff');
-  font-display: swap;
-}
-@font-face{
-  font-family:post no bills jaffna;
-  font-style:normal;
-  font-weight:700;
-  src:local('Post No Bills Jaffna'),
-      url(https://fonts.cdnfonts.com/s/15515/PostNoBillsJaffna-Bold.woff) format('woff');
-  font-display: swap;
-}
-@font-face{
-  font-family:post no bills jaffna light;
-  font-style:normal;
-  font-weight:300;
-  src:local('Post No Bills Jaffna Light'),
-      url(https://fonts.cdnfonts.com/s/15515/PostNoBillsJaffna-Light.woff) format('woff');
-  font-display: swap;
-}
-@font-face{
-  font-family:post no bills jaffna medium;
-  font-style:normal;
-  font-weight:500;
-  src:local('Post No Bills Jaffna Medium'),
-      url(https://fonts.cdnfonts.com/s/15515/PostNoBillsJaffna-Medium.woff) format('woff');
-  font-display: swap;
-}
-@font-face{
-  font-family:post no bills jaffna semibold;
-  font-style:normal;font-weight:600;
-  src:local('Post No Bills Jaffna SemiBold'),
-      url(https://fonts.cdnfonts.com/s/15515/PostNoBillsJaffna-SemiBold.woff) format('woff');
-  font-display: swap;
-}
-@font-face{
-  font-family:post no bills jaffna extrabold;
-  font-style:normal;
-  font-weight:800;
-  src:local('Post No Bills Jaffna ExtraBold'),
-      url(https://fonts.cdnfonts.com/s/15515/PostNoBillsJaffna-ExtraBold.woff) format('woff');
-  font-display: swap;
-}
-
-
 :root {
-  --grey-color: rgb(150, 150, 150);
-  --light-grey-color: rgba(208, 208, 208, 1);
-  --light-black-color: rgba(15, 15, 15, 1);
-  --white-color: rgb(255, 255, 255, 1);
-  --black-color: rgb(0, 0, 0, 1);
+  
 }
 
-.data {
-  background-color: var(--black-color);
-  max-width: 100%;
-  min-height: 44px;
-}
-
-.data-container {
-  max-width: 1150px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.data-row {
-  min-height: 44px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.schedule {
-  display: flex;
-}
-
-.phone-img {
-  padding-right: 16.1px;
-}
-
-.data-info {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15.53px;
-  color: var(--grey-color);  
-}
-.number {
-  padding: 0 10px 0 0;
-  border-right: 1px solid var(--grey-color);
-}
-.days {
-  padding: 0 10px;
-  border-right: 1px solid var(--grey-color);
-}
-.time {
-  padding: 0 0 0 10px;
-}
-
-.registration {
-  display: flex;
-}
-
-.reg-img {
-  padding-right: 12px;
-  background-color: transparent;
-}
-
-.reg-text {
-  background-color: transparent;
-}
-
-.reg-text:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
 
 /*MENU BURGER*/
 .navbar {
@@ -130,7 +14,7 @@
   top: 0px;
   width: 100%;
   height: 80px;
-  background: var(--light-black-color);
+  background: black;
 }
 
 .container {
@@ -187,539 +71,23 @@
 }
 
 .navbar__wrap .menu > li > a:hover {
-  color: var(--white-color);
+  color: white
 }
 
-
-/*MAIN*/
-.main {  
-  max-height: 810px;
-  background: url("../img/Блок главный/01.webp") center/cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px;
-}
-
-.info {
-  width: 100%;
-  max-width: 320px;
-  height: 320px;
-  border: 4px solid var(--white-color);
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 160px;
-}
-
-.info-icon {
-  font-family: "Post No Bills Jaffna SemiBold", sans-serif;
-  font-size: 64px;
-  color: var(--white-color);
-  margin-top: 93px;
-  border-bottom: 2px solid var(--white-color);
-  display: inline-block;
-}
-
-.info-city {
-  font-family: "PT Sans", sans-serif;
-  font-size: 22px;
-  line-height: 28.47px;
-  color: var(--white-color);
-  margin: 7px 0 94px 0;
-}
-
-.text {
-  font-family: "PT Sans", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: var(--white-color);
-  margin: 0 auto;
-  max-width: 730px;
-  min-height: 96px;
-  padding: 80px 0 154px 0;
-  text-align: center;
-}
-
-
-/* Блок коллекий FIRST BLOCK */
-.first-block {
-  max-width: 1920px;
-  min-height: 730px;
-}
-.first-block-row {
-  display: flex;
-}
-.new-season-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.new-season {
-  width: 100%;
-  max-width: 1040px;
-  height: 730px;
-  background-color: var(--black-color);
-  text-align: center;
-}
-.new-season-content {
-  padding: 93px 80px;
-}
-.new-season-title {
-  max-width: 376px;
-  font-family: 'Playfair Display';
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 42.19px;
-  text-transform: uppercase;
-  color: var(--white-color);
-  margin: 0 0 50px 0;
-}
-.new-season-line {
-  width: 120px;
-  border: 1px solid var(--white-color);
-  margin: 0 0 50px 0;
-}
-.new-season-row {
-  display: flex;
-  gap: 50px;
-}
-.new-season-item {
-  cursor: pointer;
-}
-.item-bg {
-  width: 260px;
-  height: 325px;
-  background-color: rgba(25, 27, 28, 1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 0 25px 0;
-  transition: 0.6s ease;
-}
-.item-bg:hover {
-  transform: translateY(-10px);
-  transition: 0.6s ease;
-}
-.item-img {
-  width: 260px;
-  height: 260px;
-  background: url('../img/Блок коллекий/01.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; 
-}
-.item-title {
-  font-family: 'Playfair Display';
-  font-size: 18px;
-  text-transform: uppercase;
-  line-height: 21.09px;
-  color: var(--white-color);
-  text-align: start;
-  margin: 0 0 10px 0;  
-  transition: 0.5s ease;
-}
-.item-title:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  transition: 0.5s ease;
-}
-.item-price {
-  font-family: 'Playfair Display';
-  font-size: 16px;
-  line-height: 18.75px;
-  color: var(--light-grey-color);
-  text-align: start;
-}
-.new-collection {
-  width: 100%;
-  max-width: 880px;
-  height: 730px;
-  background: url('../img/Блок коллекий/02.webp');
-  background-repeat: no-repeat;
-  background-size: cover;  
-  display: flex;
-  justify-content: center;
-}
-
-.new-collection-content {
-  width: 100%;
-  max-width: 376px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 484px 252px 100px 252px;
-}
-.new-collection-title {
-  max-width: 376px;
-  font-family: 'Playfair Display';
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 42.19px;
-  color: var(--white-color);
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 0 30px 0;
-}
-.new-collection-line {
-  width: 120px;
-  border: 1px solid var(--white-color);
-  margin: 0 0 30px 0;
-}
-.button {
-  font-size: 18px;
-  line-height: 23.29px;
-  text-transform: uppercase;
-  border: 1px solid var(--white-color);
-  color: var(--white-color);
-  padding: 12px 28px;
-  background: transparent;
-  transition: 0.4s ease;
-}
-.button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  transition: 0.4s ease;
-}
-/*SECOND BLOCK*/
-.second-block {
-  max-width: 1920px;
-  min-height: 600px;
-}
-.second-block-row {
-  display: flex;
-}
-.second-block-collection {
-  width: 100%;
-  max-width: 880px;
-  height: 600px;
-  background: url("../img/Блок коллекий/03.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; 
-}
-.second-block-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.second-block-info {
-  width: 100%;
-  max-width: 1040px;
-  height: 600px;
-  background-color: var(--black-color);
-}
-.second-block-content {
-  height: auto;
-  align-items: center;
-  text-align: center;
-  padding: 0 20px;
-}
-.second-block-title {
-  font-family: 'Playfair Display';
-  font-size: 36px;
-  line-height: 42.19px;
-  text-transform: uppercase;
-  color: var(--white-color);
-  margin: 0 0 40px 0;
-}
-.second-block-line {
-  width: 120px;
-  border: 1px solid var(--white-color);
-  margin: 0 0 40px 0;
-}
-.second-block-text {
-  max-width: 471px;
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--white-color);
-  text-align: center;
-  padding: 0 20px;
-  margin: 0 0 61px 0;
-}
-
-
-/*NEW GOODS*/
-.new-goods {
-  max-width: 1920px;
-  min-height: 1289px;
-  background-color: var(--black-color);
-}
-.new-goods-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 120px 0 0 0;
-}
-.new-goods-title {
-  max-width: 440px;
-  font-family: 'Playfair Display';
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 42.19px;
-  color: var(--white-color);
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 0 40px 0;
-}
-.new-goods-line {
-  width: 120px;
-  border: 1px solid var(--white-color);
-  margin: 0 0 81px 0;
-}
-.new-goods-row {
-  max-width: 1149px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px 23px;
-  padding: 0 20px 20px 20px;
-}
-.new-goods-item {
-  cursor: pointer;
-}
-
-
-/*OUR BRANDS*/
-.our-brands {
-  width: 100%;
-  background-color: var(--light-black-color);
-}
-.our-brands-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 20px 74px 20px;
-}
-.our-brands-title {
-  font-family: 'Playfair Display';
-  font-size: 36px;
-  line-height: 42.19px;
-  font-weight: 600;
-  margin: 0 0 40px 0;
-  text-transform: uppercase;
-  color: var(--white-color);
-  text-align: center;
-}
-.our-brands-line {
-  width: 120px;
-  border: 1px solid var(--white-color);
-  margin: 0 0 40px 0;
-}
-.our-brands-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-.our-brands-icon {
-  width: 255px;
-  min-height: 94px;
-  background-image: url('../img/Блок бренды/01.svg');
-}
-
-/*FOOTER*/
-.footer {
-  max-width: 1920px;
-  min-height: 400px;
-  background: url("../img/Блок footer/01.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.footer-content {
-  max-width: 1110px;
-  margin: 0 auto;
-  display: flex;
-  padding: 20px;
-}
-.footer-about {
-  margin: 0 31px 0 0;
-}
-.footer-title {
-  font-family: 'Playfair Display';
-  font-size: 24px;
-  line-height: 28.13px;
-  color: var(--white-color);
-  text-transform: uppercase;
-  margin: 0 0 40px;
-}
-.footer-text {
-  max-width: 350px;
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--white-color);
-  text-align: justify;
-  margin: 0 0 37px 0;
-}
-.footer-category {
-  margin: 0 72px 0 0;
-}
-.footer-subcategory {
-  max-width: 270px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px; 
-
-}
-.footer-subcategory-item {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 14px;
-  line-height: 21px;
-  font-family: "PT Sans", sans-serif;
-  color: var(--light-grey-color);
-  background-color: var(--light-black-color);
-  transition: 0.4s ease;
-}
-.footer-subcategory-item:hover {
-  background-color: rgba(28,28,28, 1);
-  transition: 0.4s ease;
-}
-.footer-input {
-  max-width: 210px;
-  height: 42px;
-  color: var(--white-color);
-  background-color: rgba(255, 255, 255, 0.4);
-  padding: 0 0 0 10px;  
-  transition: 0.5s ease;  
-}
-.footer-input:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: 0.5s ease;
-}
-input::-webkit-input-placeholder { color: var(--light-grey-color);; }
-input::-moz-placeholder { color: var(--light-grey-color);; }
-
-.footer-button {
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: var(--light-grey-color);
-  background-color: var(--light-black-color);
-  padding: 10px 20px;
-  transition: 0.4s ease;
-}
-.footer-button:hover {
-  background-color: rgba(28,28,28, 1);
-  transition: 0.4s ease;
-}
-
-/*COPYRIGHT*/
-.copyright {
-  max-width: 100%;
-  min-height: 50px;
-  background-color: var(--light-black-color);
-  position: relative;
-}
-.copyright-row {
-  max-width: 1110px;
-  min-height: 50px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center; 
-}
-.copyright-text {
-  font-family: "PT Sans", sans-serif;
-  font-size: 12px;
-  line-height: 15.53px;
-  color: var(--light-grey-color);
-}
 
 /*RESPONSIVE*/
 @media (max-width: 1919px) {
-  .new-season {
-    height: auto;
-  }
-  .new-season-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .new-collection {
-    height: auto;
-  }
+  
 }
 @media (max-width: 1460px) {
-  .first-block-row {
-    display: flex;
-    flex-direction: column;
-  }
-  .new-season{
-    max-width: 100%;
-  }
-  .new-collection {
-    width: 100%;
-    max-width: 100%;
-  } 
+  
 }
-@media (max-width: 1200px) {
-  .first-block-row {
-    display: flex;
-    flex-wrap: wrap;  
-  }
-  .new-season{
-    max-width: 100%;
-  }
-  .new-collection {
-    width: 100%;
-    max-width: 100%;
-  }
-  .copyright-row {
-    padding: 0 20px;
-  }
+@media (max-width: 1200px) { 
   
 }
 
 @media (max-width: 960px) {
-  .first-block-row {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  .new-collection {
-    max-width: 100%;
-    height: 100%;
-    background: url('../img/Блок коллекий/02.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   
-  
-  .second-block-row {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-
-  }
-  .second-block-collection{
-    max-width: 100%;
-    height: 600px;
-    order: 2;
-  }
-  .second-block-info {
-    max-width: 100%;
-    height: auto;
-    order: 1;
-  }
-  .second-block-content {
-    padding: 30px 10px;
-  }
-
-  .new-goods-row {
-    padding: 0 20px 40px;
-  }
 }
 @media (max-width: 800px) {
   .navbar__wrap .menu {
@@ -741,7 +109,7 @@ input::-moz-placeholder { color: var(--light-grey-color);; }
     width: 30px;
     height: 3px;
     margin: 5px auto;
-    background-color: var(--white-color);
+    background-color: white;
     transition: 0.2s;
   }
 
@@ -751,7 +119,7 @@ input::-moz-placeholder { color: var(--light-grey-color);; }
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: var(--black-color);
+    background-color: black;
     z-index: 100;
     display: flex;
     transition: 0.3s;
@@ -762,7 +130,7 @@ input::-moz-placeholder { color: var(--light-grey-color);; }
     top: 0px;
     width: 100%;
     height: 80px;
-    background: var(--light-black-color);
+    background: black;
   }
 
   .popup_scrolled {
@@ -771,7 +139,7 @@ input::-moz-placeholder { color: var(--light-grey-color);; }
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: var(--black-color);
+    background-color: black;
     z-index: 100;
     display: flex;
     transition: 0.3s;
@@ -802,7 +170,7 @@ input::-moz-placeholder { color: var(--light-grey-color);; }
     padding: 20px 0;
     font-size: 20px;
     font-weight: bold;
-    color: var(--white-color);
+    color: white;
   }
 
   .popup .menu > li > a:hover {
@@ -826,67 +194,10 @@ input::-moz-placeholder { color: var(--light-grey-color);; }
   }
 }
 
-@media (max-width: 640px) {
-  .new-season-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .new-collection-content {
-    min-height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  } 
-  .footer-content {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px 20px;
-  }
-  .footer-title {
-    padding: 20px 0 0 0;
-  }
+@media (max-width: 640px) {  
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) {  
   
-  .new-season-content {
-    padding: 20px;
-  }
-  .new-season-title {
-    font-size: 30px;
-  }
-  .new-collection-content {
-    min-height: 350px;
-    padding: 0 20px;
-  }
-  .new-collection-title {
-    font-size: 30px;
-  }
-  .second-block-title {
-    font-size: 30px;
-  }
-  .second-block-collection {
-    max-height: 450px;
-  }
-  
-  .new-goods-content {
-    padding: 50px 0 0 0;
-  }
-  .new-goods-title {
-    font-size: 30px;
-  }
-  .our-brands-title {
-    font-size: 30px;
-  }
-  .copyright-row {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
